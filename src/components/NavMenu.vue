@@ -12,7 +12,7 @@ const brand = ref ('A.J.s AV Company Directory')
       <div class="menu">
           <a href="#" class="menu-item"> Departments </a>
           <a href="#" class="menu-item"> Settings </a>
-          <a href="#" class="menu-item"> Logout </a>
+          <a href="#" class="menu-login"> Logout </a>
       </div>  
     </div>
 
@@ -35,8 +35,12 @@ nav {
     }
   }
   .menu{
+    @apply flex gap-2;
     &-item{
-    @apply hover:bg-slate-200 flex gap-1 text-lg font-bold text-red-600 rounded-md;
+    @apply hover:bg-slate-200 hover:text-black flex gap-1 text-lg font-bold text-red-600 rounded-md;
+    }
+    &-login{
+      @apply hover:bg-slate-200 hover:text-black flex gap-1 text-lg font-bold text-red-600 bg-black;
     }
   }
 }
