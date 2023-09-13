@@ -1,10 +1,12 @@
 <script setup>
+import MainSearch from './HomePage.vue'
 import { ref } from 'vue'
-const title = ref('Main Content!!!')
+const title = ref('')
 </script>
 
 <template>
-  <main class="flex min-h-screen ">
-    <h1 class="text-6xl font-thin text-slate-800">{{ title }}</h1>
+<main>
+  <MainSearch />
+  <h1>Welcome</h1>
   </main>
 </template>
