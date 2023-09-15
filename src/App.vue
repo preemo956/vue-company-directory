@@ -6,6 +6,18 @@ import HomePage  from './views/HomePage.vue';
 <template>
   <NavMenu />
   <RouterView />
-    <h1> Search Bar</h1>
+    <div class = "wrapper">
 
+
+<h1>Hello There</h1>
+
+    </div>
 </template>
+
+<style scoped lang="postcss">
+
+.wrapper {
+  @apply flex flex-col;
+}
+
+</style>
