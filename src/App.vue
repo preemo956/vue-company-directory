@@ -1,5 +1,6 @@
 <script setup>
 import NavMenu from '@/components/NavMenu.vue'
+import MainCards from './components/MainCards.vue';
 import HomePage  from './views/HomePage.vue';
 </script>
 
@@ -7,9 +8,9 @@ import HomePage  from './views/HomePage.vue';
   <NavMenu />
   <RouterView />
     <div class = "wrapper">
+    <MainCards/>
 
 
-<h1>Hello There</h1>
 
     </div>
 </template>
@@ -17,7 +18,7 @@ import HomePage  from './views/HomePage.vue';
 <style scoped lang="postcss">
 
 .wrapper {
-  @apply flex flex-col;
+  @apply container mx-auto flex flex-col gap-4 py-4;
 }
 
 </style>

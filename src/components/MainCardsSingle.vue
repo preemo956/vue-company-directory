@@ -1,0 +1,46 @@
+<script setup>
+import { faker } from '@faker-js/faker'
+    const firstName = faker.name.firstName()
+const fullName = faker.name.fullName()
+const selectCard = () => {
+    console.log('${fullName} selected')
+    }
+</script>
+
+<template> 
+<div class="card" @click="selectCard">
+<div class="card-image">
+<img :src="faker.internet.avatar()" alt="" srcset=""/>
+</div>
+<div class="card-details">
+<p class="card-details-name">{{ fullName }} </p>
+<p class="card-details-job">{{ faker.name.jobTitle() }}, {{ faker.name.jobArea() }}</p>
+
+<p class="card-details-quote">"{{ faker.lorem.paragraph() }}"</p>
+</div>
+ </div>
+</template>
+
+<style scoped lang="postcss">
+.card {
+    @apply cursor-pointer overflow-hidden rounded-md  bg-slate-200 p-8 shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-slate-900;
+ .card-image{
+    img{
+    @apply mx-auto rounded-full object-contain;
+    } 
+}   
+ .card-details {
+    @apply flex flex-col gap-2 pt-6 text-center;
+    .card-details-name {
+        @apply text-3xl font-thin tracking-wider  text-blue-600;
+    }
+    .card-details-job {
+        @apply -mt-2 text-xs text-blue-700 font-bold;
+    }
+   
+    .card-details-quote {
+        @apply pt-4 text-lg font-semibold italic text-slate-700;
+    }
+ }
+}
+</style>
