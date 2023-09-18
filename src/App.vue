@@ -1,7 +1,8 @@
 <script setup>
 import NavMenu from '@/components/NavMenu.vue'
 import MainCards from './components/MainCards.vue';
-import HomePage  from './views/HomePage.vue';
+import HomePage from './views/HomePage.vue';
+import MainPagination from './components/MainPagination.vue';
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import HomePage  from './views/HomePage.vue';
   <RouterView />
     <div class = "wrapper">
     <MainCards/>
+    <MainPagination/>
 
 
 
