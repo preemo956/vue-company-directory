@@ -1,7 +1,7 @@
 <script setup>
 import NavMenu from '@/components/NavMenu.vue'
 import MainCards from './components/MainCards.vue';
-import MainSearch from '@/./views/HomePage.vue';
+
 import MainPagination from './components/MainPagination.vue';
 </script>
 

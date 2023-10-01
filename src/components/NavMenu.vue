@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-const brand = ref ('A.J.s AV Company Directory')
+const brand = ref ('A.J.s AV Company Directory (DEV ENV)')
 </script>
 
 <template>
