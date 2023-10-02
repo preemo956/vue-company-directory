@@ -1,9 +1,6 @@
 <script setup>
 import MainCardsSingle from '@/components/MainCardsSingle.vue'
-
 </script>
-
-
 
 <template>
     <div class="sub-wrapper">
