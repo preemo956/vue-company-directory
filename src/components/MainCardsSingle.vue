@@ -1,5 +1,9 @@
 <script setup>
+  import { ref } from 'vue'
   import { faker } from '@faker-js/faker'
+
+import useAPI from '@/composables/useAPI'
+const { getDepartment } = useAPI()
 
   const firstName = faker.person.firstName()
   const lastName = faker.person.lastName()

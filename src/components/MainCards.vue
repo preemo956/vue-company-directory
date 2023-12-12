@@ -1,10 +1,18 @@
 <script setup>
+import useAPI from '@/composables/useAPI'
 import MainCardsSingle from '@/components/MainCardsSingle.vue'
+
+const { employees } = useAPI()
 </script>
 
 <template>
     <div class="sub-wrapper">
+        <Suspense>
 <MainCardsSingle v-for="n in 20" :key="n" />
+<template #fallback>
+    <div>Loading...</div>
+</template>
+</Suspense>
 </div>
 </template>
 

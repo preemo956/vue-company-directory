@@ -1,7 +1,9 @@
 <script setup>
-import { ref } from 'vue';
-const pages = ref(10)
-const activePage = ref(4)
+import useAPI from '@/composables/useAPI'
+
+const { activePage, pages, getEmployees } = useAPI()
+
+
 
 const prevPage = () => {
     if (activePage.value > 1) {
