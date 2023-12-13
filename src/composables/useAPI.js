@@ -20,7 +20,7 @@ const getEmployees = async () => {
   const { data, headers } = await api.get('/api/employees', {
     params: {
       page: activePage.value,
-      pageSize: pageSize.value,
+      size: pageSize.value,
     },
   })
   employees.value = data
