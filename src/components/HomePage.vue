@@ -8,7 +8,7 @@ import MainPagination from '@/components/MainPagination.vue';
 
 import useAPI from '@/composables/useAPI'
 
-//const { getEmployees, loading } = useAPI()
+const { getEmployees, loading } = useAPI()
 
 onMounted(async () => {
   await getEmployees()
